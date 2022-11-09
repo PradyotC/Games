@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main_Menu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/tutorial.unity
+    guid: d0bed19638fbe473e9fa91a7b3f3040c
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Tutorial_Increase Speed.unity
+    guid: e6bf7e4b6a6f048efa0ccc1d65efb8aa
+  - enabled: 1
+    path: Assets/Scenes/Tutorial_Decrease Speed.unity
+    guid: 91abeccb30ba44f6d97461703ab71506
+  - enabled: 1
+    path: Assets/Scenes/ninja_run_mushtaq.unity
+    guid: 717179b08e8934fac860d9fc3503937e
+  - enabled: 1
+    path: Assets/Scenes/Tutorial_Gravity.unity
+    guid: 1f158b2ffe6a44b2b8b11f1ec1256214
+  - enabled: 1
+    path: Assets/Scenes/Level_Dash.unity
+    guid: 87c250c2020b4ea499e546adb0016983
+  - enabled: 1
+    path: Assets/Scenes/ninja_run_rewind.unity
+    guid: 5cac7ce31bb34a544a2d012aa47d9c61
+  - enabled: 0
+    path: Assets/Scenes/ninja_run_level_ayan.unity
+    guid: 6aa80894138786143a853b3c402f82f1
+  - enabled: 0
+    path: Assets/Scenes/ninja_run_level_Siddhant.unity
+    guid: e5fbeac44d963c6438b76d3e5cffe670
+  - enabled: 1
+    path: Assets/Scenes/level_one.unity
+    guid: 2eaf126f6d17b4ef09ec57f040b7ec93
+  - enabled: 1
+    path: Assets/Scenes/level_two.unity
+    guid: a2549113cc143714e8872cb931ddd109
+  - enabled: 1
+    path: Assets/Scenes/level_three.unity
+    guid: f930b61222a663d4da7a1345f2d9d75b
+  - enabled: 1
+    path: Assets/Scenes/level_four.unity
+    guid: 31ca122b7004745c0b764cf11fb50ef1
+  - enabled: 1
+    path: Assets/Scenes/level_five.unity
+    guid: 89991bb69279541e7a2d33ec00d7842a
+  - enabled: 1
+    path: Assets/Scenes/level_six.unity
+    guid: 67184acf29f38804b90820874b6aabec
+  - enabled: 1
+    path: Assets/Scenes/level_seven.unity
+    guid: 959d42d97c4bf1e4abac6e55fce22cb5
+  m_configObjects: {}
