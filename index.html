@@ -51,22 +51,15 @@
 <div id="myModal" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <p>Press Button for fullscreen<p>
-    <p><div id="unity-fullscreen-button"></div></p>
+    <span>Press Button and play in fullscreen<span>
+    <div id="unity-fullscreen-button"></div>
   </div>
 </div>
 
     </div>
     <script>
 // Get the modal
-var modal = document.getElementById("myModal");
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+      var modal = document.getElementById("myModal");
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
