@@ -58,13 +58,6 @@
 
     </div>
     <script>
-// Detect exit fullscreen
-      window.addEventListener('keydown', function(e) {
-        if (e.key == "Escape") {
-          // console.log("Escape pressed");
-			    unityInstance.SendMessage("Bridge", "getValue");
-        }
-      });
 
 // Get the modal
       var modal = document.getElementById("myModal");
@@ -149,12 +142,19 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
+          // Detect exit fullscreen
+          window.addEventListener('keydown', function(e) {
+            if (e.key == "Escape") {
+              // console.log("Escape pressed");
+              unityInstance.SendMessage("DontKill", "getValue");
+            }
+          });
           loadingBar.style.display = "none";
           localStorage.setItem("playValue", 0);
-			    unityInstance.SendMessage("Bridge", "setValue",localStorage.getItem("playValue"));
+			    unityInstance.SendMessage("DontKill", "setValue",localStorage.getItem("playValue"));
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1)
-  			    unityInstance.SendMessage("Bridge", "setValue",localStorage.getItem("playValue"));
+  			    unityInstance.SendMessage("DontKill", "setValue",localStorage.getItem("playValue"));
           };
           modal.style.display = "block";
         }).catch((message) => {
