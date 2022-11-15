@@ -58,6 +58,13 @@
 
     </div>
     <script>
+// Detect exit fullscreen
+      document.body.addEventListener('keypress', function(e) {
+        if (e.key == "Escape") {
+          console.log("Escape pressed");
+        }
+      });
+
 // Get the modal
       var modal = document.getElementById("myModal");
       var container = document.querySelector("#unity-container");
@@ -142,6 +149,8 @@
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
           loadingBar.style.display = "none";
+          // localStorage.setItem("playValue", 0);
+			    // unityInstance.SendMessage("Bridge", "setValue",localStorage.getItem("playValue"));
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
           };
