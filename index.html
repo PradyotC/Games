@@ -142,19 +142,20 @@
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         }).then((unityInstance) => {
-          // Detect exit fullscreen
-          window.addEventListener('keydown', function(e) {
-            if (e.key == "Escape") {
-              // console.log("Escape pressed");
-              unityInstance.SendMessage("DontKill", "getValue");
-            }
-          });
+          // // Detect exit fullscreen
+          // window.addEventListener('fullscreenchange', (event) => { 
+          //   if(document.fullscreenElement==null){
+          //   console.log("exit fullscreen");
+          //   unityInstance.SendMessage("Bridge", "Getvalue", "exitfullscreen");
+          //   // unityInstance.SendMessage("Bridge", "StoreValue");
+          //   }
+          // });
           loadingBar.style.display = "none";
-          localStorage.setItem("playValue", 0);
-			    unityInstance.SendMessage("DontKill", "setValue",localStorage.getItem("playValue"));
+          // localStorage.setItem("playValue", 0);
+			    // unityInstance.SendMessage("Bridge", "Setvalue",1);
           fullscreenButton.onclick = () => {
-            unityInstance.SetFullscreen(1)
-  			    unityInstance.SendMessage("DontKill", "setValue",localStorage.getItem("playValue"));
+            unityInstance.SetFullscreen(1);
+  			    // unityInstance.SendMessage("Bridge", "Setvalue",1);
           };
           modal.style.display = "block";
         }).catch((message) => {
